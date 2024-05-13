@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import ma.enset.backend.enums.AccountStatus;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Date;
 import java.util.List;
 @Entity
@@ -22,6 +22,6 @@ public abstract class BankAccount {
     @ManyToOne
     private Customer customer;
 
-    @OneToMany(mappedBy = "bankAccount",fetch = FetchType.LAZY) //or EAGER IF I WANT TO CHARGE THE OPERATIONS OR YOU CAN CHARGE THEM USING A FUNCTION IN THE SERVICES
+    @OneToMany(mappedBy = "bankAccount",fetch = FetchType.LAZY, cascade=CascadeType.ALL)  //or EAGER IF I WANT TO CHARGE THE OPERATIONS OR YOU CAN CHARGE THEM USING A FUNCTION IN THE SERVICES
     private List<AccountOperation> accountOperations;
 }

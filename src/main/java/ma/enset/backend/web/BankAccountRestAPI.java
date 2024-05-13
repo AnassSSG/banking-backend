@@ -21,6 +21,12 @@ public class BankAccountRestAPI {
     public BankAccountDTO getBankAccount(@PathVariable String accountId) throws BankAccountNotFoundException {
         return bankAccountService.getBankAccount(accountId);
     }
+
+    @GetMapping("/accounts/customer/{customerId}")
+    public List<BankAccountDTO> getUserBankAccounts(@PathVariable Long customerId) throws BankAccountNotFoundException {
+        return bankAccountService.customerAccounts(customerId);
+    }
+
     @GetMapping("/accounts")
     public List<BankAccountDTO> listAccounts(){
         return bankAccountService.bankAccountList();
