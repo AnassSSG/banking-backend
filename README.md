@@ -71,7 +71,7 @@ Mise en place d'un système d'authentification utilisant Spring Security et JSON
 ![Screenshot 2024-05-20 013045](https://github.com/AnassSSG/banking-backend/assets/133109998/57011398-052b-4e8e-b488-606f85630b81)
 
 ## Conclusion
-Le projet Digital Banking offre une solution moderne et sécurisée pour la gestion des comptes bancaires. Avec son architecture solide basée sur Spring Boot et Angular, il fournit une expérience utilisateur fluide et réactive. Grâce à des fonctionnalités avancées telles que la gestion des clients et des comptes, ainsi que la sécurité renforcée par Spring Security et JWT, l'application répond aux besoins actuels du secteur bancaire. En résumé, Digital Banking représente une solution complète et efficace pour la gestion bancaire en ligne.
+Le projet Digital Banking offre une solution moderne et sécurisée pour la gestion des comptes bancaires. Avec son architecture solide basée sur Spring Boot et Angular, il fournit une expérience utilisateur fluide et réactive. Grâce à des fonctionnalités avancées telles que la gestion des clients et des comptes, ainsi que la sécurité renforcée par Spring Security et JWT. En résumé, Digital Banking représente une solution complète et efficace pour la gestion bancaire en ligne.
 
 
 
